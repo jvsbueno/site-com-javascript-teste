@@ -90,3 +90,8 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
+
+.contador {
+    font-size: 20 px;
+    text-align: center;
+}
