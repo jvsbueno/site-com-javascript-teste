@@ -11,6 +11,8 @@ for(let i=0;i < botoes.length;i++){
 
         botoes[i].classList.add("ativo");
         textos[i].classList.add("ativo");
+        atualizaCronometro();
+
     }
 }
 
@@ -22,9 +24,12 @@ const tempoObjetivo4 = new Date("2025-02-01T00:00:00");
 
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
 
-for(let i = 0; i<contadores.length; i++){  
-    contadores[i].textContent = calculaTempo(tempos[i]);
+function atualizaCronometro {
+    for(let i = 0; i<contadores.length; i++){  
+        contadores[i].textContent = calculaTempo(tempos[i]);
+    }
 }
+
 
 function calculaTempo(tempoObjetivo){
     let tempoAtual = new Date();
